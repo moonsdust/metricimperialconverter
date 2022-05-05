@@ -1,0 +1,93 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --gradient: linear-gradient(
+        210deg,
+        hsl(29deg 99% 68%) 0%,
+        hsl(8deg 100% 74%) 8%,
+        hsl(342deg 100% 74%) 15%,
+        hsl(309deg 54% 65%) 23%,
+        hsl(242deg 70% 75%) 31%,
+        hsl(204deg 84% 61%) 38%,
+        hsl(190deg 68% 51%) 46%,
+        hsl(192deg 72% 52%) 54%,
+        hsl(214deg 87% 69%) 62%,
+        hsl(288deg 53% 68%) 69%,
+        hsl(331deg 79% 65%) 77%,
+        hsl(316deg 65% 62%) 85%,
+        hsl(291deg 57% 61%) 92%,
+        hsl(263deg 76% 67%) 100%
+      );
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #1F2937;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Inter", Oxygen, 'Helvetica Neue', Roboto, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+}
+h1 {
+    font-size: 2.5em;
+}
+
+h1, p, button {
+    letter-spacing: 1.1px;
+}
+
+button {
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #ffffff7c;
+    background-color: #1F2937;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+input[type=number] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+#top {
+    background-image: var(--gradient);
+	background-size: 400%;
+	animation: gradient 20s ease infinite;
+    padding: 7%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#conv{
+    padding: 2%;
+}
+#number {
+    font-size: 1.1em;
+}

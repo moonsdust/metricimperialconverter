@@ -1,0 +1,31 @@
+<DOCTYPE! html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Metric and Imperial Converter</title>
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- Metric and Imperial Converter by Emily Su-->
+        <div id="top">
+            <h1>Metric and Imperial Converter</h1>
+            <input type="number" id="number" name="number" min="0">
+            <button onclick="convert()">Convert</button>
+        </div>
+        <div id="conv">
+            <p><b>Length (Meter/Feet)</b><p>
+            <p id="length">0 meters = 0 feet | 0 feet = 0 meters</p>
+            <br>
+            <p><b>Mass (Kilograms/Pounds)</b></p>
+            <p id="mass">0 kilograms = 0 pounds | 0 pounds = 0 kilograms</p>
+            <br>           
+            <p><b>Volume (Liters/Gallons)</b></p>
+            <p id="volume">0 liters = 0 gallons | 0 gallons = 0 liters</p>
+            <br>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
